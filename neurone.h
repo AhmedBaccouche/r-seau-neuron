@@ -7,7 +7,7 @@
 struct neuron {
     double output;
     double bias;
-    double weight;
+    double weight[2];
     struct neuron *next;
     struct neuron *prev;
 };
