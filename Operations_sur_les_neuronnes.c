@@ -9,7 +9,7 @@ void  unitary_output(neuronne *neuron,double input[2])
     double output=0;
     for(i=0;i<2;i++)
     {
-        output=output+neuron->weight[a]*input[2];
+        output=output+neuron->weight[i]*input[2];
     }
     n->bias = (rand() / (double)RAND_MAX) * 2 - 1;
     n->output = 0;
