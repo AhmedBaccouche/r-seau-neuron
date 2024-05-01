@@ -8,11 +8,13 @@ struct neuron {
     double output;
     double bias;
     double weight;
+    struct neuron *next;
+    struct neuron *prev;
 };
 typedef struct neuron neuron;
 
 struct layer {
-    int n;
-    neuron *t;
+    int num_neurons;
+    neuron *neuron;
 };
 typedef struct layer layer;
