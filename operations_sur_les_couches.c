@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "structures.c"
 
 
 layer *creer_couche(int nombre_neuronnes)
