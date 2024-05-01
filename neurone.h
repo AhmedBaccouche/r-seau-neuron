@@ -5,7 +5,7 @@
 #include <math.h>
 
 struct neuron {
-    double output ;
+    double output;
     double bias;
     double weight;
 };
