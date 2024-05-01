@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <time.h>
 
-//Fonction qui génere un output de la neuronne d'entrée en fonction des output des neuronnes de la couche précédente
+//Fonction qui gÃ©nere un output de la neuronne d'entrÃ©e en fonction des output des neuronnes de la couche prÃ©cÃ©dente
 void  unitary_output(neuronne *neuron,double input[2])
 {
     double output=0;
@@ -15,7 +15,7 @@ void  unitary_output(neuronne *neuron,double input[2])
     n->output = 0;
 }
 
-//Fonction qui initialise le bias et weight à une valeur aléatoire, et l
+//Fonction qui initialise le bias et weight Ã  une valeur alÃ©atoire, et l
 void initialiser_neuronne(neuronne *neuron){
     srand(time(NULL));
     for (int i = 0; i < 2; i++)
