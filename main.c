@@ -1,3 +1,6 @@
+#include<neurone.h>
+#include<activation.h>
+#include<Operations_sur_les_neuronnes.h>
 
 
 int main() 
