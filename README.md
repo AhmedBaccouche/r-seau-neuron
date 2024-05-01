@@ -1,6 +1,6 @@
 _Simple Neural Network in C_
 
-## Structure
+## Structure 
 
 1. `neuron` :formé par
    - `output` 
