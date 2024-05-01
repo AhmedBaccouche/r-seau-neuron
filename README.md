@@ -2,7 +2,7 @@ _Simple Neural Network in C_
 
 ## Structure
 
-1. `neuron` 
+1. `neuron` :formé par
    - `output` 
    - `bias` 
    - `weight`
