@@ -9,7 +9,7 @@ double sigmoid(double x)
 }
 
 
-//unité de rectification linéaire
+//unitÃ© de rectification linÃ©aire
 double Relu(double x)
 {
     if (x>0){
