@@ -14,15 +14,15 @@ layer *creer_couche(int nombre_neuronnes)
         return;
     }
 
-    layer1->neuronne=(neuron*)malloc(sizeof(neuron));
-    if (layer1->neuronne==NULL)
+    layer1->neuron=(neuron*)malloc(sizeof(neuron));
+    if (layer1->neuron==NULL)
     {
         printf("erreur d'allocation !");
         return;
     }
-    initialiser_neuronne(layer1->neuronne);
-    layer1->neuronne->prev=NULL;
-    current_neuron=layer1->neuronne;
+    initialiser_neuronne(layer1->neuron);
+    layer1->neuron->prev=NULL;
+    current_neuron=layer1->neuron;
 
     for(i=0;i<nombre_neuronnes-1;i++)
     {
