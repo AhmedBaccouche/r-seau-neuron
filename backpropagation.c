@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "structures.h"
 #include "activation.h"
+#include "backpropagation.h"
 
 void backward_propagation(layer *input_layer, layer *output_layer, double learning_rate, double expected_output) {
     neuron *input_neuron = input_layer->neuron;
