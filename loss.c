@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include "loss.h"
 
 double loss_function(double *y,double *prob_y,int n)
 {
