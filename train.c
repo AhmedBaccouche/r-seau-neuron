@@ -2,6 +2,7 @@
 #include "structures.h"
 #include "forwardpropagation.h"
 #include "backpropagation.h"
+#include "train.h"
 
 void train_network(layer *input_layer, layer *output_layer, double learning_rate, int epochs, double expected_output) {
     for (int i = 0; i < epochs; i++) {
