@@ -1,3 +1,4 @@
+#include "optimization.h"
 #include <math.h>
 
 double derivative_sigmoid(double a)
