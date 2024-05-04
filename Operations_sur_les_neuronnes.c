@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "structures.c"
+#include "structures.h"
 #include "opérations_sur_les_neuronnes.h"
 
 //Fonction qui génere un output de la neuronne d'entrée en fonction des output des neuronnes de la couche précédente
