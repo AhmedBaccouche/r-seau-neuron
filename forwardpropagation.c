@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "structures.h"
 #include "activation.h"
+#include "forwardpropagation.h"
 
 void forward_propagation(layer *input_layer, layer *output_layer) {
     neuron *input_neuron = input_layer->neuron;
