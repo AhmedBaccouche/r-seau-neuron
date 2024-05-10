@@ -22,12 +22,10 @@ int main(){
 
 
 
-void read_matrix(char *filename, double (*T)[COLS])
-{
+void read_matrix(char *filename, double (*T)[COLS]) {
     FILE *fp;
     fp = fopen(filename, "r");
-    if (fp == NULL)
-    {
+    if (fp == NULL) {
         printf("Erreur lors de l'ouverture du fichier\n");
         return;
     }
@@ -36,26 +34,25 @@ void read_matrix(char *filename, double (*T)[COLS])
     int row = 0;
 
     // Read each line from the file
-    while (fgets(line, sizeof(line), fp) && row < LINE)
-    {
+    while (fgets(line, sizeof(line), fp) && row < LINE) {
         char *token;
         int col = 0;
 
         // Parse the line using strtok
         token = strtok(line, ";");
-        double value =  strtod(token, NULL); // Convert token to double
-        T[row][col++] = value; // Store in the matrix
-        token = strtok(NULL, ";");
-        value =  strtod(token, NULL); // Convert token to double
-        T[row][col++] = value; // Store in the matrix
-        token = strtok(NULL, ";");
-        value =  strtod(token, NULL);// Convert token to double
-        T[row][col++] = value; // Store in the matrix
+        while (token != NULL && col < COLS) {
+            // Convert token to float and store in the matrix
+            T[row][col++]  = atof(token);
+            token = strtok(NULL, ";");
+        }
 
         row++; // Move to the next row
     }
+
     fclose(fp);
 }
+
+
 
 
 
