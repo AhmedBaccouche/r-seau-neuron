@@ -3,4 +3,5 @@
 #include<stdio.h>
 #include<stdlib.h>
 void saveWeightBiasLoss(double**,double,double);
+void read_matrix(char *filename, double (*T)[COLS]);
 #endif
